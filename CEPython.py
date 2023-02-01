@@ -20,10 +20,10 @@ def buscacep():
 
   if 'erro' not in endereço:
     print("---- CEP ENCONTRADO ----")
-    print('Logradouro: {}' .format(endereço['logradouro']))
     print('CEP: {}' .format(endereço['cep']))
     print('Cidade: {}' .format(endereço['localidade']))
     print('Estado: {}' .format(endereço['uf']))
+    print('Logradouro: {}' .format(endereço['logradouro']))
   else:
     print('{} é um CEP invalido ou não foi encontrado.')
 
