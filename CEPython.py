@@ -10,7 +10,6 @@ Original file is located at
 import requests
 
 def buscacep():
-  #print('---------- CEPython ----------')
   cep = input("Qual o CEP? ")
   while len(cep) != 8:
     print('Errrouuuuu')
@@ -21,6 +20,7 @@ def buscacep():
 
   if 'erro' not in endereço:
     print("---- CEP ENCONTRADO ----")
+    print('Logradouro: {}' .format(endereço['logradouro']))
     print('CEP: {}' .format(endereço['cep']))
     print('Cidade: {}' .format(endereço['localidade']))
     print('Estado: {}' .format(endereço['uf']))
